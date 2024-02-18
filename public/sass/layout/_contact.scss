@@ -1,0 +1,102 @@
+
+.contact-us{
+    min-height: 20rem;
+    margin: 2.5rem auto 4rem;
+
+    .form{
+        width: 50rem; margin: auto;
+    
+        h1, p{
+            font-size: 1.5rem; color: #444;
+            font-weight: normal; letter-spacing: .5px;
+        }
+        p{
+            font-size: .9rem; color: #888; text-align: center;
+            line-height: 180%; margin: 1.5rem auto 1rem; width: 92%;
+        }
+        hr{
+            width: 100%; padding: .1px; background: #ddd;
+            margin: .5rem auto 1rem;
+        }
+        > div{
+            margin: 2rem auto; padding: 0 1.5rem; background: #fafafe;
+            border-radius: .2rem; border: 1px solid #ddd;
+            box-shadow: .1rem .1rem 1rem #7771;
+    
+            > div{
+                margin-top: 1.5rem;
+            }
+            .input{
+                label{
+                    font-size: .8rem; color: #666;
+                    letter-spacing: .5px; margin: 0 0 .7rem;
+                }
+                input, textarea{
+                    border: 1px solid #c7c7c7; border-radius: .2rem;
+                    font-size: .85rem;
+                    padding: .5rem .8rem; color: #222; letter-spacing: .5px;
+                    resize: none;
+                    @extend .scroll;
+                    &:focus{ border-color: #777; }
+                    &.error{ border-color: rgb(211, 60, 60); }
+                    &.disabled{ cursor: not-allowed; }
+                }
+            }
+            > div.flex-space{
+                .input{ width: 48%; }
+            }
+            button{
+                margin: 1rem auto 1.5rem;
+                background: var(--site-color); color: #fff;
+                border-radius: .2rem; padding: .6rem 0; width: 10rem;
+                font-size: .9rem; letter-spacing: .5px; opacity: .9;
+                &:hover{ opacity: 1; }
+            }
+        }
+        .shape{
+            width: 6.5rem; height: 6.5rem;
+            z-index: -1;
+            filter: blur(5px);
+            &:nth-child(1){ margin: 1rem 0 0 -4em; }
+            &:nth-child(2){
+                left: auto; right: -6rem; top: -7rem;
+                width: 17rem; height: 17rem;
+                margin: 1rem 0 0 -4em;
+            }
+            &:nth-child(3){
+                left: auto; top: auto;
+                left: 35rem; bottom: -1rem;
+                width: 6rem; height: 6rem;
+                margin: 1rem 0 0 -4rem;
+            }
+        }
+    }
+    .success{
+        height: 30rem; display: none;
+        margin: auto;
+
+        .image{
+            width: 7rem; position: relative;
+            img{ width: 100%; }
+        }
+        h1{
+            font-size: 1.1rem; color: #444; text-align: center;
+            letter-spacing: .5px; margin: 1.5rem auto .5rem;
+        }
+        p{
+            font-size: .9rem; color: #555; text-align: center;
+            letter-spacing: .5px; margin: .5rem auto; width: 30rem;
+            line-height: 160%; max-width: 70%;
+            span{ color: #333; margin: 0 .5rem; }
+        }
+        .button{
+            padding: .6rem 3rem; font-size: .9rem;
+            border-radius: .2rem; cursor: pointer;
+            letter-spacing: .5px; margin: 1.5rem auto 0;
+            color: #fff; background: var(--site-color);
+            opacity: .9;
+            &:hover{ opacity: 1; }
+        }
+    
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "comp_next",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.4.2",
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "jquery": "^3.7.1",
+        "next": "13.5.4",
+        "next-route": "^2.0.0",
+        "react": "^18",
+        "react-dom": "^18",
+        "sass": "^1.69.0",
+        "swiper": "^11.0.3"
+    }
+}
